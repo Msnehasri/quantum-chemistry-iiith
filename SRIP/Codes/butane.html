@@ -51,10 +51,10 @@ html>
 		</style>
 	</head>
 	<body>
-		<script src="../lib/three.min.js"></script>
-		<script src="../lib/TrackballControls.js"></script>
-		<script src="../lib/CSS3DRenderer.js"></script>
-		<script src="../lib/PDBLoader.js"></script>
+		<script src="../Libraries/three.min.js"></script>
+		<script src="../Libraries/TrackballControls.js"></script>
+		<script src="../Libraries/CSS3DRenderer.js"></script>
+		<script src="../Libraries/PDBLoader.js"></script>
 
 		<div id="container"></div>
 		<!--<div id="info"><a href="http://threejs.org" target="_blank" rel="noopener">three.js</a> css3d - molecules</div>-->
@@ -96,10 +96,10 @@ html>
 				controls.addEventListener( 'change', render );
 				//
 				baseSprite.onload = function () {
-					loadMolecule( "../lib/but.pdb" );
+					loadMolecule( "../Libraries/but.pdb" );
 					showAtomsBonds();
 				};
-				baseSprite.src = '../lib/ball.png';
+				baseSprite.src = '../Libraries/ball.png';
 				//
 				window.addEventListener( 'resize', onWindowResize, false );
 			}
